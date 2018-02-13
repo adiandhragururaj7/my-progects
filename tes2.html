@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>
+			grid tut
+		</title>
+		<style>
+		body{
+			background-color: black;
+		}
+		h1{
+			display: grid;
+			background-color: #343536;
+			font-family: sans-serif;
+			padding-left: 400px;
+			grid-auto-rows: minmax(80px,auto);
+			padding-top: 20px;
+			font-size: 50px;
+
+		}
+		nav{
+			position: fixed;
+height:30px;
+width: 98%;
+background-color:rgba(0,0,0,.5); 
+/*z-index: 99;*/
+text-align: center;
+padding-top: 1em;
+border: white 1px solid;
+		}
+		nav a{
+	font-size: 20px;
+	text-decoration: none;
+	color: #fff;
+	margin-right:50px;
+	line-height: 10px;
+	padding-bottom: 50px;
+
+}
+
+.crap>div{
+			
+			padding: 1em;
+			}
+		.crap{
+			
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-auto-rows: minmax(100px,auto); 
+	grid-gap: 1em;
+	justifyitems:stretch;
+	align-items: stretch;
+	padding-top: 5em;
+	
+
+}
+      .box1{
+          grid-column: 1/3;
+          grid-row:1/3;
+          background-color: red;
+          border: green 3px dotted;
+          background-image: url("21.jpeg");
+          background-size: contain;
+
+
+         
+         }
+      .box2{
+      	grid-row: 1;
+      	background-color:yellow; 
+      	border: red 3px dotted;
+
+      }
+      .box3{
+           background-color: green;
+           border: yellow 3px dotted;
+      }
+      .box4{
+background-color: orange;
+border: #297847 3px dotted;
+
+      }
+      .box5{
+grid-column: 2/4;
+background-color: #242526;
+border: white 3px dotted;
+            }
+		</style>
+	</head>
+	<body>
+		<h1>GRID MAX TUTORIALS</h1>
+		
+		<nav>
+			<a href="#">HOME</a>
+			<a href="#">CONTACT</a>
+			<a href="#">ABOUTUS</a>
+			<a href="#">REGISTER</a>
+		</nav>
+	<div class="crap">
+		<div class="box box1">Box1</div>
+		<div class="box box2">Box2</div>
+	<div class="box box3">Box3</div>
+	<div class="box box4">Box4</div>
+	<div class="box box5">Box5</div>
+	
+	</body>
+</html>
