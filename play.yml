@@ -1,0 +1,11 @@
+---
+ - user: bobby
+   hosts: 13.233.198.70
+   vars:
+     repact: 
+        command: sudo touch rip.yml
+   tasks:
+     name: simple file
+     create:
+       dest: /root/etc
+       content: "{{repact}}"    
